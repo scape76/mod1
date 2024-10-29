@@ -3,8 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Модульна робота 1</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <header class="sidebar__header">
+          <img src="images/logo.jpg" alt="logo" class="sidebar__logo" />
+        </header>
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <a href="#" class="sidebar__nav-link">Головна</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="#forestry-section" class="sidebar__nav-link"
+                >Лісництва</a
+              >
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="#conservation" class="sidebar__nav-link"
+                >Природоохорона</a
+              >
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="#facts" class="sidebar__nav-link">Цікаві факти</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="#gallery" class="sidebar__nav-link">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+        <footer class="sidebar__footer">
+          <p class="sidebar__copyright">
+            &copy; 2024,
+            <a href="https://github.com/scape76" class="sidebar__link"
+              >Олех Данііл</a
+            >
+          </p>
+        </footer>
+      </div>
+      <main class="main">
+        <h1 class="main__title">Лісництва Карпат</h1>
+
+        <section class="main__intro">
+          <p class="main__intro-text">
+            Карпатські ліси - унікальна екосистема, що займає значну частину
+            західної України. Лісництва відіграють ключову роль у збереженні та
+            відновленні цих природних багатств.
+          </p>
+        </section>
+
+        <section class="forestry" id="forestry-section">
+          <div class="forestry__grid">
+            <div class="forestry__card">
+              <h2 class="forestry__title">Рахівське лісництво</h2>
+              <img
+                src="images/dummy.jpg"
+                alt="Рахівське лісництво"
+                class="forestry__image"
+              />
+              <p class="forestry__description">
+                Одне з найбільших лісництв у Карпатах, що охороняє унікальні
+                букові праліси, занесені до списку ЮНЕСКО.
+              </p>
+              <ul class="forestry__details">
+                <li class="forestry__detail">Площа: 54,000 га</li>
+                <li class="forestry__detail">
+                  Основні породи: бук, ялина, ялиця
+                </li>
+                <li class="forestry__detail">
+                  Висота над рівнем моря: 400-2061 м
+                </li>
+              </ul>
+            </div>
+
+            <div class="forestry__card">
+              <h2 class="forestry__title">Ворохтянське лісництво</h2>
+              <img
+                src="images/dummy.jpg"
+                alt="Ворохтянське лісництво"
+                class="forestry__image"
+              />
+              <p class="forestry__description">
+                Розташоване у серці Карпат, відоме своїми віковими смерековими
+                лісами та природоохоронною діяльністю.
+              </p>
+              <ul class="forestry__details">
+                <li class="forestry__detail">Площа: 32,000 га</li>
+                <li class="forestry__detail">Основні породи: смерека, ялиця</li>
+                <li class="forestry__detail">
+                  Висота над рівнем моря: 850-1500 м
+                </li>
+              </ul>
+            </div>
+
+            <div class="forestry__card">
+              <h2 class="forestry__title">Синевирське лісництво</h2>
+              <img
+                src="images/dummy.jpg"
+                alt="Синевирське лісництво"
+                class="forestry__image"
+              />
+              <p class="forestry__description">
+                Охороняє території навколо знаменитого озера Синевир, зберігаючи
+                унікальну флору та фауну регіону.
+              </p>
+              <ul class="forestry__details">
+                <li class="forestry__detail">Площа: 42,000 га</li>
+                <li class="forestry__detail">
+                  Основні породи: ялина, бук, явір
+                </li>
+                <li class="forestry__detail">
+                  Висота над рівнем моря: 500-1700 м
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="conservation" id="conservation">
+          <h2 class="conservation__title">Природоохоронна діяльність</h2>
+          <div class="conservation__content">
+            <p class="conservation__text">
+              Лісництва Карпат активно займаються:
+            </p>
+            <ul class="conservation__list">
+              <li class="conservation__item">Відновленням лісових масивів</li>
+              <li class="conservation__item">
+                Захистом рідкісних видів рослин і тварин
+              </li>
+              <li class="conservation__item">Протидією незаконним вирубкам</li>
+              <li class="conservation__item">Розвитком екологічного туризму</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <div class="info-panel">
+        <div class="info-panel__facts" id="facts">
+          <h3 class="info-panel__title">Цікаві факти про Карпатські ліси</h3>
+          <ul class="info-panel__list">
+            <li class="info-panel__item">
+              Карпатські ліси займають близько 37% території Українських Карпат
+            </li>
+            <li class="info-panel__item">
+              В Карпатах знаходиться найбільший в Європі масив букових пралісів
+            </li>
+            <li class="info-panel__item">
+              Тут мешкає понад 50 видів ссавців та 180 видів птахів
+            </li>
+            <li class="info-panel__item">
+              Середній вік дерев у пралісах становить 250-350 років
+            </li>
+          </ul>
+
+          <h4 class="info-panel__contact">Контакти екстреної допомоги:</h4>
+          <p class="info-panel__contact-item">
+            Гаряча лінія лісової охорони: 0800-500-465
+          </p>
+          <p class="info-panel__contact-item">
+            Екологічна інспекція: (044) 123-45-67
+          </p>
+        </div>
+
+        <div class="info-panel__gallery" id="gallery">
+          <h3 class="info-panel__title">Галерея природи Карпат</h3>
+          <div class="info-panel__image-grid">
+            <img
+              src="images/dummy.jpg"
+              alt="Дика природа Карпат"
+              class="info-panel__image"
+            />
+            <img
+              src="images/dummy.jpg"
+              alt="Карпатський водоспад"
+              class="info-panel__image"
+            />
+            <img
+              src="images/dummy.jpg"
+              alt="Гірські краєвиди"
+              class="info-panel__image"
+            />
+            <img
+              src="images/dummy.jpg"
+              alt="Рідкісні рослини"
+              class="info-panel__image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

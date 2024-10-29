@@ -1,0 +1,80 @@
+.forestry__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.forestry__card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.forestry__card:hover {
+  transform: translateY(-5px);
+}
+
+.forestry__card h2 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.forestry__image {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.conservation {
+  background: var(--main-color);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.conservation__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.conservation__text {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.conservation__list {
+  list-style: none;
+  padding: 0;
+}
+
+.conservation__item {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.conservation__item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #8bc34a;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .forestry__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+}
